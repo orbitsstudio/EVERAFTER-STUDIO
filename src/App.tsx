@@ -51,9 +51,6 @@ export default function App() {
     }
   };
 
-  // Selected file for code browser
-  const [selectedFile, setSelectedFile] = useState('style.css');
-
   const testimonials = [
     {
       quote: "“Everafter Studio captured our Lake Como celebration with a breathtaking poetry that surpassed every expectation. Looking through our heirloom gallery feels like reliving our wedding inside a high-fashion editorial film.”",
@@ -162,7 +159,7 @@ export default function App() {
 
           {/* Mobile Navigation Drawer */}
           {mobileMenuOpen && (
-            <div className="md:hidden fixed inset-0 top-[115px] z-50 bg-[#242321] text-[#F7F4EF] p-8 flex flex-col gap-6 text-lg font-serif">
+            <div className="md:hidden fixed inset-0 top-[73px] z-50 bg-[#242321] text-[#F7F4EF] p-8 flex flex-col gap-6 text-lg font-serif">
               <button onClick={() => { setActivePage('home'); setMobileMenuOpen(false); }} className="text-left py-2 border-b border-white/10">Home</button>
               <button onClick={() => { setActivePage('stories'); setMobileMenuOpen(false); }} className="text-left py-2 border-b border-white/10">Wedding Stories</button>
               <button onClick={() => { setActivePage('portfolio'); setMobileMenuOpen(false); }} className="text-left py-2 border-b border-white/10">Portfolio Gallery</button>
